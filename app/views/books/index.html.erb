@@ -11,7 +11,9 @@
       <tr>
         <td><%= post.title %></td>
         <td><%= post.body %></td>
-        <td><%= link_to "show", book_path(post) %></td>
+        <td><%= link_to "show", book_path(book) %></td>
+        <td><%= link_to "edit", edit_book_path(book) %></td>
+        <td><%= link_to "destroy", destroy_book_path(destroy) %></td>
       </tr>
     <% end %>
   </tbody>
