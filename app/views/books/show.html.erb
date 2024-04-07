@@ -1,3 +1,5 @@
+
+
 <strong>Title</strong>
 <p><%= @book.title %></p>
 
@@ -5,5 +7,5 @@
 <p><%= @book.body %></p>
 
 <a href="<%= edit_book_path(@book) %>">Edit</a>
-<%= link_to 'Back', articles_path %>
-<%= link_to "destroy", book_path(@book.id), method: :delete, "data-confirm" => "Are you sure?" %>
+<%= link_to 'Back', '/books' %>
+<%= link_to "Destroy", book_path(@book.id), method: :delete, "data-confirm" => "Are you sure?" %>
