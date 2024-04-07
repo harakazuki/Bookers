@@ -3,3 +3,7 @@
 
 <strong>Body</strong>
 <p><%= @book.body %></p>
+
+<a href="<%= edit_book_path(@book) %>">Edit</a>
+<%= link_to 'Back', articles_path %>
+<%= link_to "destroy", book_path(@book.id), method: :delete, "data-confirm" => "Are you sure?" %>
